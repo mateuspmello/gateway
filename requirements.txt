@@ -1,7 +1,0 @@
-Django>=>5
-python-decouple==3.8
-psycopg
-django-nose
-coverage
-djangorestframework
-requests
