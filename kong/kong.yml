@@ -7,7 +7,6 @@ services:
     - name: blog
       paths:
         - /blog
-    - name: auth
+    - name: gateway
       paths:
         - /gateway
-  
