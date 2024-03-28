@@ -36,7 +36,7 @@ class CallIndex(TestCase):
                 Post.objects.create(title="Papai",content="pig",pub_date="2024-10-02 17:30", author=a)
                 response = self.client.get("/api/v1/posts/")
                 actual = response.content
-                expected_content = b'[{"title":"Peppa","content":"pig","author":"http://testserver/api/v1/authors/1/"},{"title":"Papai","content":"pig","author":"http://testserver/api/v1/authors/1/"}]'
+                expected_content = b'[{"title":"Peppa","content":"pig","author":"http://testserver/api/v1/authors/3/"},{"title":"Papai","content":"pig","author":"http://testserver/api/v1/authors/3/"}]'
                 self.assertEqual(actual, expected_content)
                 self.assertEqual(response.status_code, 200)
                 
